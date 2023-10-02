@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tags</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+        <!-- javascript tags placed in head section -->
+        <script>
+            function addHtml() {
+                document.getElementById('demo1').innerHTML='content of header javaScript tags'
+            }
+        </script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- javascript tags placed in body section -->
+        <script>
+            function addHtml1() {
+                document.getElementById('demo2').innerHTML='content of body javaScript tags'
+            }
+        </script>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <!-- Invoke header javaSript function-->
+        <button onclick="addHtml()">click to show content</button>
+        <!-- Invoke body javaSript function-->
+        <button onclick="addHtml1()">click to show content 1</button>
+        <!-- Invoke exterjs javaSript function-->
+        <button onclick="addHtml2()">click to show content 2</button>
+        <!-- script tags used within html -->
+        <script>
+            document.getElementById('demo').innerHTML='javaScript in body of html'
+        </script>
+        <script src="tags.js"></script>
+    </body>
+</html>
