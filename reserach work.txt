@@ -6,3 +6,4 @@ Research areas
 - string methods, string search, html template strings
 - javaScript numbers
 - javaScript array iteration
+- javascript break from w3 schools
