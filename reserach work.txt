@@ -1,0 +1,8 @@
+Research areas
+- shift assignment operators
+- bitwise and assignment operators
+- logical operators
+- Nullish coalescing assignment operator
+- string methods, string search, html template strings
+- javaScript numbers
+- javaScript array iteration

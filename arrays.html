@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <p id="demo"></p>
+        <p id="demo1"></p>
+
+        <script>
+            const items = [45, 50, 20, 10, 30, 40]
+
+            let txt = ""
+
+            items.forEach(myFunction)
+
+            document.getElementById("demo").innerHTML = txt
+
+            function myFunction(value, index, array) {
+                txt += value + "<br/>"
+            }
+
+            const items1 = items.map(myFunction1)
+
+            document.getElementById("demo1").innerHTML = items1
+
+            function myFunction1(value) {
+                return value *= 2
+            }
+        </script>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
